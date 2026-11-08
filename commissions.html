@@ -1,385 +1,86 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#313d32">
-
-  <meta name="description"
-        content="Inquire about a custom painting, drawing or sculpture by artist Yasmin Khaial.">
-
+  <meta name="description" content="Inquire about a custom painting, drawing or sculpture by artist Yasmin Khaial.">
   <title>Commissions | Yasmin's Khaial</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap"
-        rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
-
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header">
-    <a class="brand" href="index.html"
-       aria-label="Yasmin's Khaial, home">
-      <span class="brand-symbol" aria-hidden="true">YK</span>
-      <span class="brand-small">Yasmin's Khaial</span>
-    </a>
-
-    <button class="nav-toggle" type="button"
-            aria-label="Open menu"
-            aria-controls="site-nav"
-            aria-expanded="false">
-      Menu ☰
-    </button>
-
-    <nav id="site-nav" class="site-nav"
-         aria-label="Main navigation">
-      <a href="index.html#work">The work</a>
-      <a href="index.html#about">The artist</a>
-      <a href="workshops.html">Workshops</a>
-      <a href="commissions.html"
-         class="nav-pill"
-         aria-current="page">
-        Commissions ↗
-      </a>
-    </nav>
+    <a class="brand" href="index.html" aria-label="Yasmin's Khaial, home"><span class="brand-symbol" aria-hidden="true">YK</span><span class="brand-small">Yasmin's Khaial</span></a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">Menu ☰</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation"><a href="index.html#work">The work</a><a href="index.html#about">The artist</a><a href="workshops.html">Workshops</a><a class="nav-pill" href="commissions.html" aria-current="page">Commissions ↗</a></nav>
   </header>
-
   <main id="main">
-
-    <!-- Soft pink watercolor-style page heading -->
     <section class="subhero wash-pink">
       <div class="wrap subhero-grid">
-        <div>
-          <p class="eyebrow">
-            A PERSONAL PIECE, MADE TOGETHER
-          </p>
-          <h1 class="display">
-            Commission<br><em>an artwork.</em>
-          </h1>
-        </div>
-
-        <p>
-          From a favourite memory to a visual idea
-          you can't quite explain, begin with the story.
-          This is a conversation, not a purchase
-          or a commitment.
-        </p>
+        <div><p class="eyebrow">A PERSONAL PIECE, MADE TOGETHER</p><h1 class="display">Commission<br><em>an artwork.</em></h1></div>
+        <p>From a favourite memory to a visual idea you can't quite explain, begin with the story. This is a conversation, not a purchase or a commitment.</p>
       </div>
     </section>
-
-    <!-- Explain the process before asking for information -->
     <section class="section compact-section">
       <div class="wrap">
         <p class="eyebrow">HOW IT WORKS</p>
-
         <div class="process-grid">
-          <div>
-            <span>01</span>
-            <h2>Describe it</h2>
-            <p>
-              Share your project, preferred medium,
-              deadline and budget.
-            </p>
-          </div>
-
-          <div>
-            <span>02</span>
-            <h2>Talk it through</h2>
-            <p>
-              Choose an optional short call after
-              submitting your inquiry.
-            </p>
-          </div>
-
-          <div>
-            <span>03</span>
-            <h2>Plan the work</h2>
-            <p>
-              Receive a quote and project terms before
-              paid concept sketches begin.
-            </p>
-          </div>
+          <div><span>01</span><h2>Describe it</h2><p>Share your project, preferred medium, deadline and budget.</p></div>
+          <div><span>02</span><h2>Talk it through</h2><p>Choose an optional short call after submitting your inquiry.</p></div>
+          <div><span>03</span><h2>Plan the work</h2><p>Receive a quote and project terms before paid concept sketches begin.</p></div>
         </div>
       </div>
     </section>
-
-    <!-- Custom art inquiry form -->
-    <section class="section inquiry-section"
-             id="request"
-             aria-labelledby="request-title">
-
+    <section class="section inquiry-section" id="request" aria-labelledby="request-title">
       <div class="wrap form-layout">
-        <div class="form-intro">
-          <p class="eyebrow">TELL ME YOUR IDEA</p>
-
-          <h2 id="request-title" class="display">
-            A little note<br>
-            <em>to the studio.</em>
-          </h2>
-
-          <p>
-            Not sure what medium fits your idea?
-            Choose "Open to suggestions." Yasmin can
-            help determine what's feasible.
-          </p>
-
-          <p class="small-muted">
-            All budgets are in CAD.
-            No payment is collected here.
-          </p>
-        </div>
-
+        <div class="form-intro"><p class="eyebrow">TELL ME YOUR IDEA</p><h2 id="request-title" class="display">A little note<br><em>to the studio.</em></h2><p>Not sure what medium fits your idea? Choose “Open to suggestions.” Yasmin can help determine what's feasible.</p><p class="small-muted">All budgets are in CAD. No payment is collected here.</p></div>
         <div>
-          <!--
-            This form is submitted by script.js.
-            Add the real Formspree endpoint in SETTINGS.
-          -->
-          <form class="inquiry-form"
-                id="commission-form"
-                data-kind="commission">
-
-            <input type="hidden"
-                   name="inquiry_type"
-                   value="Art commission">
-
-            <!-- Client details -->
+          <!-- script.js submits this form to Formspree AFTER you add its real form endpoint. -->
+          <form class="inquiry-form" id="commission-form" data-kind="commission">
+            <input type="hidden" name="inquiry_type" value="Art commission">
             <div class="two-fields">
-              <label>
-                Full name <span>*</span>
-                <input name="name"
-                       type="text"
-                       autocomplete="name"
-                       required
-                       placeholder="Your name">
-              </label>
-
-              <label>
-                Email <span>*</span>
-                <input name="email"
-                       type="email"
-                       autocomplete="email"
-                       required
-                       placeholder="you@example.com">
-              </label>
+              <label>Full name <span>*</span><input name="name" type="text" autocomplete="name" required placeholder="Your name"></label>
+              <label>Email <span>*</span><input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
             </div>
-
-            <!-- Types are suggestions, not fixed packages -->
             <div class="two-fields">
-              <label>
-                Project type <span>*</span>
-                <select name="project_type" required>
-                  <option value="">Choose one</option>
-                  <option>Original painting</option>
-                  <option>Drawing or illustration</option>
-                  <option>Mixed-media sculpture</option>
-                  <option>Creative collaboration</option>
-                  <option>Other / not sure</option>
-                </select>
-              </label>
-
-              <label>
-                Preferred medium
-                <select name="medium">
-                  <option>Open to suggestions</option>
-                  <option>Oil painting</option>
-                  <option>Acrylic painting</option>
-                  <option>Ink drawing</option>
-                  <option>Graphite drawing</option>
-                  <option>Mixed media</option>
-                  <option>Other</option>
-                </select>
-              </label>
+              <label>Project type <span>*</span><select name="project_type" required><option value="">Choose one</option><option>Original painting</option><option>Drawing or illustration</option><option>Mixed-media sculpture</option><option>Creative collaboration</option><option>Other / not sure</option></select></label>
+              <label>Preferred medium <select name="medium"><option>Open to suggestions</option><option>Oil painting</option><option>Acrylic painting</option><option>Ink drawing</option><option>Graphite drawing</option><option>Mixed media</option><option>Other</option></select></label>
             </div>
-
             <div class="two-fields">
-              <label>
-                Subject
-                <select name="subject">
-                  <option>Not sure yet</option>
-                  <option>Portrait / people</option>
-                  <option>Nature / landscape</option>
-                  <option>Abstract / conceptual</option>
-                  <option>Personal memory or story</option>
-                  <option>Other</option>
-                </select>
-              </label>
-
-              <label>
-                Purpose
-                <select name="purpose">
-                  <option>Personal collection</option>
-                  <option>Gift</option>
-                  <option>Exhibition</option>
-                  <option>Publication / business</option>
-                  <option>Other</option>
-                </select>
-              </label>
+              <label>Subject <select name="subject"><option>Not sure yet</option><option>Portrait / people</option><option>Nature / landscape</option><option>Abstract / conceptual</option><option>Personal memory or story</option><option>Other</option></select></label>
+              <label>Purpose <select name="purpose"><option>Personal collection</option><option>Gift</option><option>Exhibition</option><option>Publication / business</option><option>Other</option></select></label>
             </div>
-
-            <!-- Free text matters more than forcing rigid categories -->
-            <label>
-              Tell Yasmin about your vision <span>*</span>
-              <textarea name="description"
-                        required
-                        rows="6"
-                        placeholder="What's the story or feeling? Any preferred colours, size, details, or inspiration?"></textarea>
-            </label>
-
-            <label>
-              Inspiration link (optional)
-              <input name="reference_url"
-                     type="url"
-                     placeholder="https://... (Pinterest, Drive folder, etc.)">
-            </label>
-
+            <label>Tell Yasmin about your vision <span>*</span><textarea name="description" required rows="6" placeholder="What's the story or feeling? Any preferred colours, size, details, or inspiration?"></textarea></label>
+            <label>Inspiration link (optional)<input name="reference_url" type="url" placeholder="https://... (Pinterest, Drive folder, etc.)"></label>
             <div class="two-fields">
-              <label>
-                Approximate budget
-                <select name="budget">
-                  <option>Not sure yet</option>
-                  <option>Under $250 CAD</option>
-                  <option>$250–$500 CAD</option>
-                  <option>$500–$1,000 CAD</option>
-                  <option>Over $1,000 CAD</option>
-                  <option>Flexible</option>
-                </select>
-              </label>
-
-              <label>
-                Ideal timing
-                <select name="timeline">
-                  <option>Flexible</option>
-                  <option>Within 1 month</option>
-                  <option>1–3 months</option>
-                  <option>More than 3 months</option>
-                  <option>Specific deadline in notes</option>
-                </select>
-              </label>
+              <label>Approximate budget <select name="budget"><option>Not sure yet</option><option>Under $250 CAD</option><option>$250–$500 CAD</option><option>$500–$1,000 CAD</option><option>Over $1,000 CAD</option><option>Flexible</option></select></label>
+              <label>Ideal timing <select name="timeline"><option>Flexible</option><option>Within 1 month</option><option>1–3 months</option><option>More than 3 months</option><option>Specific deadline in notes</option></select></label>
             </div>
-
-            <!-- Radio buttons for optional consultation -->
             <fieldset class="radio-group">
-              <legend>
-                Would you like a short discovery call?
-                <span>*</span>
-              </legend>
-
-              <label>
-                <input type="radio"
-                       name="call_requested"
-                       value="Yes"
-                       required>
-                Yes, I'd like a call
-              </label>
-
-              <label>
-                <input type="radio"
-                       name="call_requested"
-                       value="No, email is fine">
-                No, email is fine
-              </label>
-
-              <p class="help-note" id="call-hint" hidden>
-                After the inquiry is sent, you'll be offered
-                a link to choose from Yasmin's available times,
-                once scheduling is configured.
-              </p>
+              <legend>Would you like a short discovery call? <span>*</span></legend>
+              <label><input type="radio" name="call_requested" value="Yes" required> Yes, I'd like a call</label>
+              <label><input type="radio" name="call_requested" value="No, email is fine"> No, email is fine</label>
+              <p class="help-note" id="call-hint" hidden>After the inquiry is sent, you'll be offered a link to choose from Yasmin's available times, once scheduling is configured.</p>
             </fieldset>
-
-            <!-- Require permission to use the submitted contact info -->
-            <label class="consent">
-              <input type="checkbox"
-                     name="contact_consent"
-                     value="Yes"
-                     required>
-              <span>
-                I agree that my details can be used to
-                respond to this inquiry. Form submissions
-                are processed by Formspree.
-                <strong>*</strong>
-              </span>
-            </label>
-
-            <button class="button button-dark"
-                    type="submit">
-              Send commission inquiry ↗
-            </button>
-
-            <p class="form-status"
-               role="status"
-               aria-live="polite"></p>
+            <label class="consent"><input type="checkbox" name="contact_consent" value="Yes" required> <span>I agree that my details can be used to respond to this inquiry. Form submissions are processed by Formspree. <strong>*</strong></span></label>
+            <button class="button button-dark" type="submit">Send commission inquiry ↗</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
           </form>
-
-          <!-- This only appears after Formspree confirms success. -->
-          <div class="form-success"
-               id="commission-success"
-               hidden
-               tabindex="-1">
-
+          <div class="form-success" id="commission-success" hidden tabindex="-1">
             <h3>Thank you. Your inquiry has been sent.</h3>
-
-            <p>
-              Yasmin can review your idea and follow up
-              about next steps. A consultation is optional
-              and doesn't confirm a commission.
-            </p>
-
-            <!-- If a call was requested and Calendly is set up -->
-            <div id="call-next-step" hidden>
-              <p>
-                Since you requested a call, you can
-                now choose an available time:
-              </p>
-
-              <a id="booking-link"
-                 class="button button-dark"
-                 href="#"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                Choose a call time ↗
-              </a>
-
-              <p class="small-muted">
-                The appointment is only booked once
-                you complete the scheduling page.
-              </p>
-            </div>
-
-            <!-- Fallback while booking is not configured -->
-            <p id="manual-call-note" hidden>
-              Yasmin can arrange a suitable time
-              with you by email.
-            </p>
+            <p>Yasmin can review your idea and follow up about next steps. A consultation is optional and doesn't confirm a commission.</p>
+            <div id="call-next-step" hidden><p>Since you requested a call, you can now choose an available time:</p><a id="booking-link" class="button button-dark" target="_blank" rel="noopener noreferrer" href="#">Choose a call time ↗</a><p class="small-muted">The appointment is only booked once you complete the scheduling page.</p></div>
+            <p id="manual-call-note" hidden>Yasmin can arrange a suitable time with you by email.</p>
           </div>
         </div>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-main">
-      <p class="footer-logo">Yasmin's Khaial</p>
-
-      <div class="footer-links">
-        <a href="index.html">Portfolio</a>
-        <a href="workshops.html">Workshops</a>
-        <a href="https://www.instagram.com/yxsmin_kh/"
-           target="_blank" rel="noopener noreferrer">
-          Instagram ↗
-        </a>
-      </div>
-    </div>
-
-    <div class="wrap footer-bottom">
-      <span>© <span data-year>2026</span> Yasmin Khaial</span>
-      <span>Made with imagination.</span>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="wrap footer-main"><p class="footer-logo">Yasmin's Khaial</p><div class="footer-links"><a href="index.html">Portfolio</a><a href="workshops.html">Workshops</a><a href="https://www.instagram.com/yxsmin_kh/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div></div><div class="wrap footer-bottom"><span>© <span data-year>2026</span> Yasmin Khaial</span><span>Made with imagination.</span></div></footer>
 </body>
 </html>
